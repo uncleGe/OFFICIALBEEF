@@ -1,0 +1,82 @@
+{% extends "logged_in_base.html" %}
+
+{% block content %}
+<!-- Home Section start -->
+    <section id="home" class="scroll-section root-sec grey lighten-5 home-wrap main-center skip-me">
+      <div class="sec-overlay">
+        <div class="container">
+          <div class="row">
+              <div class="home-inner">
+                <div class="center-align home-content">
+                  <h2 class='beef-headline head-headline'>GOT BEEF?</h2>
+        				  <h5 class='beef-headline make-it'> MAKE IT </h5>
+        					<h1 class='beef-headline official' >OFFICIAL</h1>
+
+                  <!-- Form -->
+                	<form class='beef-form form-container' name='beefForm' method='post' >
+
+                    <fieldset>
+                      <label class='pull-left'>WHO'S YOUR BEEF WITH?</label>
+                      <input class='beef-input form-control ng-pristine ng-valid ng-empty ng-touched' name="content" style="box-shadow=none;">>{{content}}
+                    </fieldset>
+
+                		<fieldset class='form-group'>
+                      <label class='pull-left'>WHAT'S YOUR BEEF?</label>
+                			<textarea class='form-control ng-pristine ng-valid ng-empty ng-touched' style="color:black;" name="content1">{{content1}}</textarea>
+                		</fieldset>
+
+                		<fieldset class='form-group'>
+                      <label class='pull-left'>WHO ARE YOU?</label>
+                			<input class='beef-input form-control' name="content2">>{{content2}}
+                		</fieldset>
+
+                		<fieldset class='form-control beef-button'>
+                			<input type='submit' class='btn btn-primary' value='submit' name='submit'>
+                		</fieldset>
+
+                	</form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- .container end -->
+        <div class="section-call-to-area">
+          <div class="container">
+            <div class="row">
+              <a href="#portfolio" class="btn-floating btn-large button-middle call-to-f section-call-to-btn animated btn-up btn-hidden" data-section="#portfolio">
+                <i class="mdi-navigation-expand-more"></i>
+              </a>
+            </div>
+          </div>
+          <!-- .container end -->
+        </div>
+      </div>
+    </section>
+
+
+    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
+      <div class="padd-tb-120 brand-bg portfolio-top">
+        <div class="portfolio-inner">
+          <div class="container">
+            <div class="row">
+              <div class="form-container beeflist-background">
+                <h1 class="beef-list title">Official Beef</h1>
+
+                  {% for p in posts %}
+
+                    {{ p.render() | safe }}
+
+                  {% endfor %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}

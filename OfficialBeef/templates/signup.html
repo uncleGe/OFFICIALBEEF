@@ -1,0 +1,48 @@
+{% extends "logged_in_base.html" %}
+
+{% block title %}Register a new user{% endblock %}
+
+{% block content %}
+
+<section class="scroll-section root-sec grey lighten-5 home-wrap main-center">
+	<div class="sec-overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col s6 offset-s3">
+					<div class="home-inner">
+						<div class="center-align home-content">
+
+							<h1 class="beef-headline head-headline">Sign Up</h1>
+
+							<form class='beef-form form-container' action="/signup" method="POST">
+
+								<fieldset>
+									<label class="pull-left" for="username">USERNAME</label>
+									<input class="beef-input form-control" type="text" name="username" />
+								</fieldset>
+
+								<fieldset>
+									<label class="pull-left" for="email">EMAIL ADDRESS</label>
+									<input class="beef-input form-control" type="text" name="email" />
+								</fieldset>
+
+								<fieldset>
+									<label class="pull-left" for="password">PASSWORD</label>
+									<input class="beef-input form-control ng-pristine ng-valid ng-empty ng-touched" type="password" name="password" />
+								</fieldset>
+
+								<fieldset>
+									<input class="btn btn-primary" type="submit" value="Submit" />
+								</fieldset>
+								
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>		
+
+{% endblock %}

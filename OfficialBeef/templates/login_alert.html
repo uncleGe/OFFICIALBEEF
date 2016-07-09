@@ -1,0 +1,47 @@
+{% extends "alert_base.html" %}
+
+{% block content %}
+
+<section id="home" class="scroll-section root-sec grey lighten-5 home-wrap main-center">
+	<div class="sec-overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col s6 offset-s3">
+					<div class="home-inner">
+						<div class="center-align home-content">
+						 
+					
+							<h1 class="beef-headline head-headline">Log In</h1>
+
+							{% if failed %}
+							    <strong class="error">Oops! Try again!</strong>
+							{% endif %}
+
+							<form class="beef-form form-container" action= "/login" method="POST">
+
+								<fieldset>
+									<label class="pull-left" for="username">USERNAME</label>
+									<input class="beef-input form-control" type="text" value="{{ username }}" name="username"/>
+								</fieldset>
+
+								<fieldset>
+									<label class="pull-left" for="password">PASSWORD</label>
+									<input class="beef-input form-control" type="password" name="password"/>
+								</fieldset>
+
+								<fieldset>
+									<button type="submit" class="btn btn-primary">Login</button>
+								</fieldset>
+								
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+{% endblock %}

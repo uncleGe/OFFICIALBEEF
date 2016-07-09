@@ -1,0 +1,16 @@
+<div class="post">
+
+  <div class="post-heading">
+    <div class="post-title">
+      {{p.subject}}
+    </div>
+    <div class="post-date">
+      {{p.EST.strftime("%I:%M %p %b %d, %Y")}}      
+    </div>
+  </div>
+
+  <div class="post-content">
+    <p>I, {{p._render_text2 | safe}}, declare OFFICIAL BEEF with {{p._render_text | safe}} because {{p._render_text1 | safe}}.</p>
+  </div>
+  
+</div>

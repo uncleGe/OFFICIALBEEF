@@ -1,0 +1,111 @@
+.brand-text {
+    color: #f8f8f8 !important;
+}
+
+.brand-text i {
+    color: #f8f8f8 !important;
+}
+
+.brand-bg{
+    background-color: #f8f8f8 !important;
+}
+
+/*.brand-bg,
+.sweet-alert button {
+    background-color: #f8f8f8 !important;
+}*/
+
+.waves-effect.waves-brand  {
+    background-color: rgba(255, 0, 0, 0.66);
+}
+
+.p-overlay {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+
+.circle-loader .path {
+    stroke: #f8f8f8;
+}
+
+
+/*.side-nav  li.current a,
+.side-nav  li a:hover {
+    border-bottom-color: #f8f8f8;
+}*/
+
+.static-menu li i:hover,
+.static-menu li a:hover,
+.submenu-ul li a:hover,
+.home-title span,
+.about-subtitle,
+.person-about > a.btn-large,
+.about-social ul li a i,
+.skill-title,
+.skill-count,
+.single-widget ul li a,
+.single-post-content a,
+.share-post li a:hover,
+.com-title a,
+span.num {
+    color: #f8f8f8;
+}
+
+.singel-hr-inner,
+.hr-wrap,
+.hrc:after,
+.thumb-slides-container.owl-theme .owl-controls .owl-page.active span,
+.blog-inner .card-content a.right:hover,
+.blog-inner .card-content a.right:focus,
+.contact-form .submit-btn:hover,
+.contact-form .submit-btn:focus,
+a.tags,
+.blog-inner .card-content a.right:active {
+    background-color: #f8f8f8;
+}
+
+.contact-form .materialize-textarea:focus,
+.contact-form .input-box:focus {
+    border-color: #f8f8f8;
+    /*box-shadow: 0px 1px 0px #f8f8f8;*/
+}
+
+
+.single-post-content blockquote {
+    border-left: 5px solid #f8f8f8;
+}
+
+
+
+@-webkit-keyframes color {
+    0%   {stroke: #f8f8f8;}
+    20%  {stroke: #f8f8f8;}
+    25%  {stroke: #f8f8f8;}
+    45%  {stroke: #f8f8f8;}
+    50%  {stroke: #f8f8f8;}
+    70%  {stroke: #f8f8f8;}
+    75%  {stroke: #f8f8f8;}
+    95%  {stroke: #f8f8f8;}
+}
+
+@keyframes color {
+    0%   {stroke: #f8f8f8;}
+    20%  {stroke: #f8f8f8;}
+    25%  {stroke: #f8f8f8;}
+    45%  {stroke: #f8f8f8;}
+    50%  {stroke: #f8f8f8;}
+    70%  {stroke: #f8f8f8;}
+    75%  {stroke: #f8f8f8;}
+    95%  {stroke: #f8f8f8;}
+}
+
+
+/* Add your CSS below */
+
+
+
+
+.menu-select [type="radio"]:checked + label:after {
+    border-color: #f8f8f8;
+    background-color: #f8f8f8;
+}
